@@ -1,0 +1,119 @@
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (master)
+$ git checkout svg
+Switched to branch 'svg'
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (svg)
+$ git add .
+warning: LF will be replaced by CRLF in css/01_petit.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in css/03_grand.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in css/style.css.
+The file will have its original line endings in your working directory.
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (svg)
+$ git commit -m "rectangle"
+[svg a21fd60] rectangle
+ 5 files changed, 29 insertions(+), 75 deletions(-)
+ create mode 100644 img_svg/02-rectangle.svg
+ create mode 100644 lienVersGit.txt
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (svg)
+$ git add .
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (svg)
+$ git commit -m "lol"
+[svg 20b0966] lol
+ 3 files changed, 22 insertions(+), 2 deletions(-)
+ create mode 100644 img_svg/03-ellipse.svg
+ create mode 100644 img_svg/04-line.svg
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (svg)
+$ git status
+On branch svg
+nothing to commit, working tree clean
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (svg)
+$ git add .
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (svg)
+$ git commit -m "reste forme svg"
+[svg 5dac378] reste forme svg
+ 7 files changed, 76 insertions(+), 6 deletions(-)
+ create mode 100644 img_svg/05-polygon.svg
+ create mode 100644 img_svg/06-polyline.svg
+ create mode 100644 img_svg/07-path.svg
+ create mode 100644 img_svg/08-text.svg
+ create mode 100644 img_svg/09-face.svg
+ create mode 100644 img_svg/10-autre.svg
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (svg)
+$ git status
+On branch svg
+nothing to commit, working tree clean
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (svg)
+$ git branch
+  master
+* svg
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (svg)
+$ git checkout master
+Your branch is ahead of 'origin/master' by 7 commits.
+  (use "git push" to publish your local commits)
+Switched to branch 'master'
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (master)
+$ git checkout svg
+error: Your local changes to the following files would be overwritten by checkou
+        css/01_petit.css
+        css/03_grand.css
+        css/style.css
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 7 commits.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   css/01_petit.css
+        modified:   css/03_grand.css
+        modified:   css/style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (master)
+$ git add .
+warning: LF will be replaced by CRLF in css/01_petit.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in css/03_grand.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in css/style.css.
+The file will have its original line endings in your working directory.
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (master)
+$ git commit -m "je sias pas"
+On branch master
+Your branch is ahead of 'origin/master' by 7 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 7 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (master)
+$ git checkout svg
+Switched to branch 'svg'
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (svg)
+$
