@@ -3,21 +3,40 @@ header main section, footer{
 }
 
 header{
-      flex-direction:row;
-      justify-content : space-between;
-      align-items:center;
+      -webkit-box-orient:horizontal;
+      -webkit-box-direction:normal;
+          -ms-flex-direction:row;
+              flex-direction:row;
+      -webkit-box-pack : justify;
+          -ms-flex-pack : justify;
+              justify-content : space-between;
+      -webkit-box-align:center;
+          -ms-flex-align:center;
+              align-items:center;
 
     img {
           display: block;
         }
     nav {
+          display : -webkit-box;
+          display : -ms-flexbox;
           display : flex;
-          flex:1;
+          -webkit-box-flex:1;
+              -ms-flex:1;
+                  flex:1;
         ul{
+          display:-webkit-box;
+          display:-ms-flexbox;
           display:flex;
-          flex:1;
-          flex-direction: row;
-          justify-content : space-around;
+          -webkit-box-flex:1;
+              -ms-flex:1;
+                  flex:1;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          -ms-flex-pack : distribute;
+              justify-content : space-around;
           li {
 
             a{
@@ -25,10 +44,10 @@ header{
               }
              a:hover{
              } 
-            } // fin li
-          } // fin ul
-        } // fin nav
-    } // fin header  
+            } /* fin li*/
+          } /* fin ul*/
+        } /* fin nav*/
+    } /* fin header  */
 
     footer div:nth-child(3) {
       font-size: 3em;
