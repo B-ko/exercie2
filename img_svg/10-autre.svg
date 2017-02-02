@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg width="200px" height="250px" xml:lang="fr"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink">
+   <title>Autre</title>
+
+   <ellipse cx="100" cy="150" rx="100" ry="10" style="fill:yellow;stroke:purple;stroke-width:4" />
+   <ellipse cx="100" cy="150" rx="10" ry="100" style="fill:yellow;stroke:purple;stroke-width:4" />
+   <ellipse cx="50" cy="100" rx="10" ry="100" style="fill:yellow;stroke:purple;stroke-width:4" />
+   <ellipse cx="50" cy="100" rx="100" ry="10" style="fill:yellow;stroke:purple;stroke-width:4" />
+   <ellipse cx="150" cy="200" rx="10" ry="100" style="fill:yellow;stroke:purple;stroke-width:4" />
+   <ellipse cx="150" cy="200" rx="100" ry="10" style="fill:yellow;stroke:purple;stroke-width:4" />
+   <ellipse cx="200" cy="100" rx="10" ry="100" style="fill:yellow;stroke:purple;stroke-width:4" />
+   <ellipse cx="200" cy="100" rx="100" ry="10" style="fill:yellow;stroke:purple;stroke-width:4" />
+
+</svg>
