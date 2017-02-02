@@ -88,6 +88,7 @@
   }
   main .global:nth-child(odd) {
     background-color: #aeafb4;
+    opacity: 0.8;
   }
   main .global:nth-child(odd) article:nth-child(1) {
     background-color: #aeafb4;
@@ -154,6 +155,13 @@
   }
   footer div i:hover {
     color: #7f8ee3;
+  }
+  html {
+    height: 200%;
+    width: 100%;
+    background-image: url("../images/parcautomne.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
 @media all and (min-width: 600px) {
