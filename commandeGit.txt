@@ -1,0 +1,183 @@
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (master)
+$ git branch svg
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (master)
+$ git checktout svg
+git: 'checktout' is not a git command. See 'git --help'.
+
+Did you mean this?
+        checkout
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (master)
+$ git checkout svg
+M       less/01_petit.less
+Switched to branch 'svg'
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (svg)
+$ git add .
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (svg)
+$ git commit -m "svg?"
+[svg db68a41] svg?
+ 2 files changed, 9 insertions(+)
+ create mode 100644 images/parcautomne.jpg
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (svg)
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkou                                                                                                                                                                                               t:
+        less/01_petit.less
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (svg)
+$ git add .
+warning: LF will be replaced by CRLF in css/01_petit.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in css/02_moyen.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in css/03_grand.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in css/style.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in index.htm.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in less/03_grand.less.
+The file will have its original line endings in your working directory.
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (svg)
+$ git commit -m "svg autoprefix"
+[svg 6c98f3b] svg autoprefix
+ 8 files changed, 473 insertions(+), 36 deletions(-)
+ rewrite css/02_moyen.css (100%)
+ rewrite css/03_grand.css (100%)
+ rewrite css/style.css (100%)
+ create mode 100644 img_svg/01-cercle.svg
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (svg)
+$ git checkout master
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+Switched to branch 'master'
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (master)
+$ git checkout svg
+error: Your local changes to the following files would be overwritten by checkou                                                                                                                                                                                               t:
+        css/01_petit.css
+        css/03_grand.css
+        css/style.css
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (master)
+$ git checkout master
+M       css/01_petit.css
+M       css/03_grand.css
+M       css/style.css
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+Already on 'master'
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (master)
+$ git add .
+warning: LF will be replaced by CRLF in css/01_petit.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in css/03_grand.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in css/style.css.
+The file will have its original line endings in your working directory.
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (master)
+$ git commit -m "je sais pas"
+[master 8ef8c96] je sais pas
+ 2 files changed, 241 insertions(+), 2 deletions(-)
+ rewrite css/style.css (100%)
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 5 commits.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   css/01_petit.css
+        modified:   css/style.css
+        modified:   less/01_petit.less
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        images/parcautomne.jpg
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (master)
+$ git add .
+warning: LF will be replaced by CRLF in css/01_petit.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in css/style.css.
+The file will have its original line endings in your working directory.
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (master)
+$ git commit -m "test"
+[master d0627db] test
+ 4 files changed, 24 insertions(+), 1 deletion(-)
+ create mode 100644 images/parcautomne.jpg
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 6 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (master)
+$ git branch
+* master
+  svg
+
+e1348790@B1153-G98PFX1 MINGW64 /c/veille/cour3/ex2 (master)
+$ git log
+commit d0627db1feeeb9375ca409db7edceb096121bc34
+Author: olivier <olipic96@hotmail.com>
+Date:   Thu Feb 2 11:29:41 2017 -0500
+
+    test
+
+commit 8ef8c964565fda47230a7a9d576206acf9ad7272
+Author: olivier <olipic96@hotmail.com>
+Date:   Thu Feb 2 10:56:44 2017 -0500
+
+    je sais pas
+
+commit 7127ab647d160dcfff3c445bfb74d3329e6cac43
+Author: olivier <olipic96@hotmail.com>
+Date:   Tue Jan 31 18:23:46 2017 -0500
+
+    changmenet avec global
+
+commit d02fd73d9d943561d7d3bb8ed45e25b998d880fe
+Merge: 0fddda8 0b7856b
+Author: olivier <olipic96@hotmail.com>
+Date:   Tue Jan 31 16:49:21 2017 -0500
+
+    master
+
+commit 0fddda87a56b84897847c740d0de85fa9273e7bf
+Author: olivier <olipic96@hotmail.com>
+Date:   Tue Jan 31 16:48:00 2017 -0500
+
+    master
+
+commit 0b7856bc7285431fb9179d50cbf91c68dfd181fc
+Author: olivier <olipic96@hotmail.com>
+Date:   Tue Jan 31 15:50:58 2017 -0500
+
+    :nth-child(odd)
+
+commit 51d0529917b0a955261e409226efea9a58665004
+Author: Olivier Pic <olipic96@hotmail.com>
+Date:   Tue Jan 31 15:06:53 2017 -0500
+
+    initialiszatin du projet
