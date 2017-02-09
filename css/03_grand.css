@@ -29,15 +29,19 @@ footer div:nth-child(3) {
 }
 .path {
   stroke-dasharray: 20;
-  animation: dash 5s linear;
+  animation: dash 5s infinite;
 }
 .path2 {
   stroke-dasharray: 10;
-  animation: dash2 10s linear;
+  animation: dash2 10s infinite;
 }
 .path3 {
   stroke-dasharray: 50;
-  animation: dash2 15s linear;
+  animation: dash2 15s infinite;
+}
+.path4 {
+  stroke-dasharray: 100;
+  animation: dash4 15s infinite;
 }
 @keyframes dash {
   to {
@@ -52,5 +56,13 @@ footer div:nth-child(3) {
 @keyframes dash3 {
   to {
     stroke-dashoffset: 500;
+  }
+}
+@keyframes dash4 {
+  from {
+    stroke-dashoffset: 60;
+  }
+  to {
+    stroke-dashoffset: 20000;
   }
 }
