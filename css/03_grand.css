@@ -66,3 +66,12 @@ footer div:nth-child(3) {
     stroke-dashoffset: 20000;
   }
 }
+.hello path {
+  transition: 0.8s;
+}
+.svg-1:hover path {
+  d: path("M8,2 L2,8");
+}
+.svg-2:hover path {
+  d: path("M10,10 L190,10 L190,120 L10,120 Z");
+}
