@@ -202,15 +202,8 @@
     width: 960px;
   }
   header {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     /* fin nav*/
   }
@@ -218,31 +211,46 @@
     display: block;
   }
   header nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
     flex: 1;
     /* fin ul*/
   }
   header nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
     flex: 1;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
     /* fin li*/
   }
   /* fin header  */
   footer div:nth-child(3) {
     font-size: 3em;
+  }
+  .path {
+    stroke-dasharray: 20;
+    animation: dash 5s linear;
+  }
+  .path2 {
+    stroke-dasharray: 10;
+    animation: dash2 10s linear;
+  }
+  .path3 {
+    stroke-dasharray: 50;
+    animation: dash2 15s linear;
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 2000;
+    }
+  }
+  @keyframes dash2 {
+    to {
+      stroke-dashoffset: 1000;
+    }
+  }
+  @keyframes dash3 {
+    to {
+      stroke-dashoffset: 500;
+    }
   }
 }
