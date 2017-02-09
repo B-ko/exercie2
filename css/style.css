@@ -274,4 +274,10 @@
   .svg-2:hover path {
     d: path("M10,10 L190,10 L190,120 L10,120 Z");
   }
+  .svg-3:hover path {
+    d: path("M4,4 L10,5 L4,7 L11,7 L4,10 L10,10");
+  }
+  .svg-4:hover path {
+    d: path("M2,2 Q2,8 8,8");
+  }
 }
